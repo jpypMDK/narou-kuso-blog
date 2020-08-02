@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Blog">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <style>
+        #lording1 {
+            position: absolute;
+            bottom: 0%;
+            right: 5%;
+            font-size: 34px;
+            color: #000000;
+        }
+        
+        #lording2 {
+            position: absolute;
+            bottom: 0%;
+            right: 5px;
+            font-size: 30px;
+            color: #621291;
+        }
+        
+        #lordingimg {
+            position: absolute;
+            bottom: 20%;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div>
+
+        <marquee id="lordingimg" scrollamount="26">
+            <img src="https://livedoor.blogimg.jp/jpypmdk/imgs/6/a/6af77282.gif" border="0" alt="はねるぱっちぇ" hspace="5" class="pict" /><br />
+        </marquee>
+
+        <strong id="lording1">
+            <p id="theGirlIsDoingXX"></p><br>
+        </strong>
+        </br>
+
+        <strong id="lording2">
+            <p>Now Lording</p>
+        </strong>
+    </div>
+</body>
+
+<script>
+    window.onload = function() {
+        const messages = ['準備中...', '祈祷中...', '休憩中よ'];
+
+        const messageNo = Math.floor(Math.random() * messages.length);
+        theGirlIsDoingXX.innerHTML = "少女" + messages[messageNo];
+
+    }
+</script>
+
+</html>

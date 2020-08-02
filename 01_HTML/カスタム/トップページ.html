@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Blog">
+
+
+<!--　　　　　　　　　　　　　 　 　 　　 　　　　＿　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　　　　　 　　 　 　 ｀ヽ＼　 /:＼ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　　　　／:´￣下､｀ヽ｜｜/:::::::人　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　 ＿__ノ:. : .＿__ ＼`ｰ‐' ノ ￣`く:::::＼　　　　　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　／´. : . : .:r'´ 　 ＿`ヽ二ﾌ´,／⌒ｌ |::::／　　　　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　 ｒ'´ ￣　二ﾆﾉ ／´::::::::｀ヽ､__ノー一く/´　　　fヽ、　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　 　　　| ヽ、f´r‐-‐ｧ'::::;:.:.:.:.:.: :.:､.:ヽ:.:.:.､:.:::､::＼　　 ﾉ　〉Y^!ヽ、　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　 　 　 |￣｀＼l　::ﾊ ! l:::::::/:::::/.:.:.r:.: : :.:|ヽ;.:ヽ:.:.ヽ::ﾊ:::::!' ￣￣｀くノ,ﾉﾉ　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　 |＿＿__>ｬ_ノ ﾉ::::::i::::::l.:.-┼‐.:.:.:.! ├-:i.:.:.:.!.::|::;ﾉ.:. 　 　 　 `く　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　l´￣/´,.- イ:::::::::ｌ::::::|￣｀ｰ一'´　 ｀ｰ'「:::丁´ 　:.:　　　　　 　!　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　 ￣｛ （_:_:_;:!:::::::::l:.:.:i:| (ﾋ_] 　　 　ﾋ_ﾝ ﾄ､::| .:　 .:.:　　 .:　　　 |　　　　 そこまでよ！！　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　 　 　 ヽ---ｲ:::.:.:.ﾉ.:.:八"　　 ,＿__,　 " |:::ヾ、: .:.:.:　　.:.:. 　 　ﾉ     　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　 　 |:::.:./:.:.:.:.:.:.ヽ　　ヽ _ﾝ　　ノ!.:.:.::::＼:.:　 .:.:.:.:　 ／　　　　　ソースを見るな  !omikujiとか作りたかった感　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　 　 　 　 l:.:.:{:::.:.:.:.: : : :＼ｰ--‐ｧ彡'´:.:.: : :.:.:.l　 .:.:.: ::／　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　ｚ─‐一ー- .､|::.:.:ヾ::.:.:.: : : : :.:ヽ、 '/:::::.:.:. ;.': : :.:/..:.:. ::／　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　 ,ｨ三ミﾐヽ､　　　　`ヾ､::＼::.:. : : :.::::::l./:::.:.:. ;.' :.:.::／;: -‐'´　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　 ＼＼ヾヾヾヽ､　 　 　,>‐=`==､===┴==-'､__∠_.:/ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　＼＼ヾヾヾヽ、,ｨ彡'三三三ヾ三三三三ヽ::::::｀l　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--. 　 　 　＼＼ヾヾヾ衫彡／ ￣￣ ｀　／`Y:.:.:｀トr;‐ｲ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　`l＾ドｎ,､尨_∠＿＿＿__／lヽ､ﾉ!: :.:.:| |l　 |　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--. 　 　 　 　 ヽしL!_ﾗ-'‐ イ　｀ｰ'|:.:.:／　.:.　ヽ.::ﾘ |ﾄ､. !　　　　　　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　 |　.: .:.:|　 　 :レ' :. .:.: 　　 Ｎ　|:::ｌ　l　　　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　 　 　 　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　 　 　 　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　 　 　 　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+<!--　　　　　　　　　　　　　 　 　 　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+
+
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <$HeadSectionCommon$>
+        <meta name="description" content="<$ArticleDescription ESCAPE$>" />
+        <$OGP$>
+            <link rel="alternate" media="handheld" type="application/xhtml+xml" href="<$BlogMobileUrl$>" />
+            <IfFoafUrl>
+                <link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" />
+            </IfFoafUrl>
+            <title>
+                <$ArticleTitle ESCAPE$> :
+                    <$BlogTitle ESCAPE$>
+            </title>
+            <script src="<$EmojiJsUrl$>"></script>
+            <script src="<$MiscJsUrl$>"></script>
+            <!--[if lt IE 9]>
+<script src="<$PartsBaseUrl$>/js/html5.js"></script>
+<![endif]-->
+            <script src="<$PartsBaseUrl$>/js/usr/import.js"></script>
+</head>
+
+
+
+
+
+<!-- ダミーページ　こういうのっていいよね -->
+<!-- 参考にさせていただいた先輩に感謝しています -->
+<!-- してるわけねえだろ馬鹿 -->
+
+
+<body>
+    <div id="visiblete">
+<strong><font size="6">
+        <span>
+            ここはミヅキが気ままに書いた溜ま。<br>
+            ・なろうネタとか苦手、なろう作者バラしてほしくない→おすすめしません<br>
+            ・荒らしにきた→帰れ・管理人知ってる→リア友なら帰れ<br>
+            ・TwitterやLINEとか荒らしにきた→帰れ。そしてTwitterやLINE荒らすな<br>
+            ・精神崩壊嫌だ→おすすめしません<br>
+            ・原作がクソだ・公式シーンが嫌だ→おすすめしません<br><br>
+            では、いい人はどうぞ<br><br>
+        </span>
+</font></strong>
+        <!-- チッ、うっせーな -->
+        <input type="button" id="ENTER-btn" value="ENTER" class="visiblete" onclick="go_to_home_page()">
+        <!-- 感謝してまーす -->
+        <form method="post" action="http://id35.fm-p.jp/385/lasleo019/">
+            <input type="submit" id="expand-btn" class="visiblete" name="btn" value="EXIT">
+        </form>
+    </div>
+
+
+
+
+    <div class="expandable" id="expandable">
+
+        <!-- トップページ-->
+
+        <body class="default_2012 page-index layout-2col sidebar-right">
+            <$BlogHeader$>
+                <div id="wrapper">
+                    <div id="container">
+
+                        <!-- ブログタイトル、説明 -->
+                        <header id="blog-header">
+                            <div id="blog-header-inner">
+                                <h1 id="blog-title">
+                                    <a href="<$BlogUrl$>">
+                                        <$BlogTitle ESCAPE$>
+                                    </a>
+                                </h1>
+                                <IfBlogDescription>
+                                    <p id="blog-description">
+                                        <$BlogDescription$>
+                                    </p>
+                                </IfBlogDescription>
+                            </div>
+<center><strong><font size="8" color="#000fff"><p id="innerHTMLtxt"></p></font></strong></center>
+                    <marquee id="scro" scrollamount="26">☆☆☆キリ番を踏んだ人は必ず報告してください！！！踏み逃げ禁止！☆☆☆</marquee>
+                        </header>
+                        <!-- /ブログタイトル、説明 -->
+
+                        <$MenuList$>
+                            <div id="content">
+                                <div id="main">
+                                    <div id="main-inner">
+                                        <$MessageBoard$>
+                                            <!-- google_ad_section_start -->
+                                            <IndexArticlesLoop>
+                                                <$TrackBackAutoDiscovery$>
+                                                    <!-- 記事全体 -->
+                                                    <article class="article<IfFirstArticle> first-article</IfFirstArticle><IfLastArticle> last-article</IfLastArticle>" itemscope itemtype="http://schema.org/BlogPosting">
+                                                        <div class="article-inner">
+
+                                                            <IfArticleCoverImage>
+                                                                <div class="article-first-image">
+                                                                    <SetVar ThumbnailHeight>250</SetVar>
+                                                                    <SetVar ThumbnailWidth>250</SetVar>
+                                                                    <IfArticleCoverImage>
+                                                                        <a href="<$ArticlePermalink$>" itemprop="url">
+                                                                        <img src="<$ArticleCoverImageThumbnail$>" /></a>
+                                                                    </IfArticleCoverImage>
+                                                                </div>
+                                                            </IfArticleCoverImage>
+
+                                                            <div<IfArticleCoverImage> class="article-box"
+                                                                </IfArticleCoverImage>>
+
+                                                                <!-- 記事ヘッダー、記事タイトル -->
+                                                                <header class="article-header">
+                                                                    <h1 class="article-title" itemprop="name">
+                                                                        <a href="<$ArticlePermalink$>" itemprop="url">
+                                                                            <$ArticleTitle ESCAPE$>
+                                                                        </a>
+                                                                    </h1>
+                                                                    <p class="article-date"><time datetime="<$ArticleDateISO8601$>" itemprop="datePublished">
+                                                                        <$ArticleDate$>
+                                                                    </time></p>
+                                                                    <IfArticleRating><span class="article-rating">
+                                                                        <$ArticleRatingIcon$>
+                                                                    </span></IfArticleRating>
+                                                                </header>
+                                                                <!-- /記事ヘッダー、記事タイトル -->
+
+                                                                <!-- 記事本文 -->
+                                                                <div class="article-body">
+                                                                    <div class="article-body-inner">
+                                                                        <$ArticleDescription ESCAPE$>
+                                                                            <IfArticleDescription> ...
+                                                                            </IfArticleDescription>
+                                                                            <span class="article-continue"><a
+                                                                                href="<$ArticlePermalink$>#more"><span
+                                                                                    class="more_icon"></span>もっと読む</a>
+                                                                            </span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /記事本文 -->
+
+                                                                <!-- 記事フッター、カテゴリ、コメント、ソーシャルボタン -->
+                                                                <footer class="article-footer">
+                                                                    <ul class="article-meta">
+                                                                        <li class="article-tags-wrap">
+                                                                            <$ArticleTagsList$>
+                                                                        </li>
+                                                                        <IfArticleAllowComment>
+                                                                            <li class="article-comment-count">
+                                                                                <dl>
+                                                                                    <dt>コメント</dt>
+                                                                                    <dd>
+                                                                                        <a href="<$ArticlePermalink$>#comments">
+                                                                                            <$ArticleCommentCount$> 件
+                                                                                        </a>
+                                                                                    </dd>
+                                                                                </dl>
+                                                                            </li>
+                                                                        </IfArticleAllowComment>
+                                                                    </ul>
+                                                                    <div class="article-social-btn">
+                                                                        <$ArticleToolBox$>
+                                                                    </div>
+                                                                </footer>
+                                                                <!-- /記事フッター、カテゴリ、コメント、ソーシャルボタン -->
+                                                        </div>
+                                    </div>
+                                    </article>
+                                    <!-- /記事全体 -->
+
+                                    <IfFirstArticle>
+                                        <$Advertise$>
+                                    </IfFirstArticle>
+
+                                    </IndexArticlesLoop>
+                                    <!-- google_ad_section_end -->
+
+                                    <!-- ページ送り -->
+                                    <SetVar NavigatorType>2</SetVar>
+                                    <SetVar NavigatorPrevPageText>&laquo;</SetVar>
+                                    <SetVar NavigatorNextPageText>&raquo;</SetVar>
+                                    <$IndexNavigator$>
+                                        <!-- /ページ送り -->
+
+                                        <!-- /#main-inner -->
+                                </div>
+                                <!-- /#main -->
+                            </div>
+
+                            <!-- サイドバー -->
+                            <aside id="sidebar" class="column">
+                                <div id="sidebar-inner">
+                                    <$PluginList_A$>
+                                        <$PluginList_B$>
+                                </div>
+                                <$LDServices$>
+                            </aside>
+                            <!-- /サイドバー -->
+
+                            <p class="to-pagetop"><a href="#">↑このページのトップヘ</a></p>
+
+                            <!-- /#content -->
+                    </div>
+                    <!-- /#container -->
+                </div>
+
+                <!-- ブログのフッター -->
+                <footer id="blog-footer">
+                    <$BlogFooter$>
+                </footer>
+                <!-- /ブログのフッター -->
+
+                <!-- /#wrapper -->
+    </div>
+
+    </body>
+<script>
+    var go_to_home_page = function() {
+        document.getElementById("expandable").style.visibility = "visible";
+        document.getElementById("visiblete").style.display = "none";
+    }
+
+$(document).ready(function() {
+        document.getElementById("visiblete").style.visibility = "visible";
+        document.getElementById("expandable").style.visibility = "hidden";
+});
+
+    window.onload = function() {
+
+      var spanText = document.getElementById("total_c_292517");
+      innerHTMLtxt.innerHTML="†あなたは"+spanText.textContent+"人目の迷える子羊です†";
+    }
+</script>
+</html>
