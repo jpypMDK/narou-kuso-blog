@@ -63,17 +63,19 @@
 
 <body>
     <div id="visiblete">
-<strong><font size="6">
-        <span>
-            ここはミヅキが気ままに書いた溜ま。<br>
-            ・なろうネタとか苦手、なろう作者バラしてほしくない→おすすめしません<br>
-            ・荒らしにきた→帰れ・管理人知ってる→リア友なら帰れ<br>
-            ・TwitterやLINEとか荒らしにきた→帰れ。そしてTwitterやLINE荒らすな<br>
-            ・精神崩壊嫌だ→おすすめしません<br>
-            ・原作がクソだ・公式シーンが嫌だ→おすすめしません<br><br>
-            では、いい人はどうぞ<br><br>
-        </span>
-</font></strong>
+        <strong>
+            <font size="6">
+                <span>
+                    ここはミヅキが気ままに書いた溜ま。<br>
+                    ・なろうネタとか苦手、なろう作者バラしてほしくない→おすすめしません<br>
+                    ・荒らしにきた→帰れ・管理人知ってる→リア友なら帰れ<br>
+                    ・TwitterやLINEとか荒らしにきた→帰れ。そしてTwitterやLINE荒らすな<br>
+                    ・精神崩壊嫌だ→おすすめしません<br>
+                    ・原作がクソだ・公式シーンが嫌だ→おすすめしません<br><br>
+                    では、いい人はどうぞ<br><br>
+                </span>
+            </font>
+        </strong>
         <!-- チッ、うっせーな -->
         <input type="button" id="ENTER-btn" value="ENTER" class="visiblete" onclick="go_to_home_page()">
         <!-- 感謝してまーす -->
@@ -88,7 +90,6 @@
     <div class="expandable" id="expandable">
 
         <!-- トップページ-->
-
         <body class="default_2012 page-index layout-2col sidebar-right">
             <$BlogHeader$>
                 <div id="wrapper">
@@ -108,11 +109,15 @@
                                     </p>
                                 </IfBlogDescription>
                             </div>
-<center><strong><font size="8" color="#000fff"><p id="innerHTMLtxt"></p></font></strong></center>
-                    <marquee id="scro" scrollamount="26">☆☆☆キリ番を踏んだ人は必ず報告してください！！！踏み逃げ禁止！☆☆☆</marquee>
+                            <center><strong>
+                                    <font size="8" color="#000fff">
+                                        <p id="innerHTMLtxt"></p>
+                                    </font>
+                                </strong></center>
+                            <marquee id="scro" scrollamount="26">☆☆☆キリ番を踏んだ人は必ず報告してください！！！踏み逃げ禁止！☆☆☆</marquee>
                         </header>
-                        <!-- /ブログタイトル、説明 -->
 
+                        <!-- /ブログタイトル、説明 -->
                         <$MenuList$>
                             <div id="content">
                                 <div id="main">
@@ -122,7 +127,9 @@
                                             <IndexArticlesLoop>
                                                 <$TrackBackAutoDiscovery$>
                                                     <!-- 記事全体 -->
-                                                    <article class="article<IfFirstArticle> first-article</IfFirstArticle><IfLastArticle> last-article</IfLastArticle>" itemscope itemtype="http://schema.org/BlogPosting">
+                                                    <article
+                                                        class="article<IfFirstArticle> first-article</IfFirstArticle><IfLastArticle> last-article</IfLastArticle>"
+                                                        itemscope itemtype="http://schema.org/BlogPosting">
                                                         <div class="article-inner">
 
                                                             <IfArticleCoverImage>
@@ -131,7 +138,8 @@
                                                                     <SetVar ThumbnailWidth>250</SetVar>
                                                                     <IfArticleCoverImage>
                                                                         <a href="<$ArticlePermalink$>" itemprop="url">
-                                                                        <img src="<$ArticleCoverImageThumbnail$>" /></a>
+                                                                            <img
+                                                                                src="<$ArticleCoverImageThumbnail$>" /></a>
                                                                     </IfArticleCoverImage>
                                                                 </div>
                                                             </IfArticleCoverImage>
@@ -146,12 +154,14 @@
                                                                             <$ArticleTitle ESCAPE$>
                                                                         </a>
                                                                     </h1>
-                                                                    <p class="article-date"><time datetime="<$ArticleDateISO8601$>" itemprop="datePublished">
-                                                                        <$ArticleDate$>
-                                                                    </time></p>
+                                                                    <p class="article-date"><time
+                                                                            datetime="<$ArticleDateISO8601$>"
+                                                                            itemprop="datePublished">
+                                                                            <$ArticleDate$>
+                                                                        </time></p>
                                                                     <IfArticleRating><span class="article-rating">
-                                                                        <$ArticleRatingIcon$>
-                                                                    </span></IfArticleRating>
+                                                                            <$ArticleRatingIcon$>
+                                                                        </span></IfArticleRating>
                                                                 </header>
                                                                 <!-- /記事ヘッダー、記事タイトル -->
 
@@ -162,8 +172,8 @@
                                                                             <IfArticleDescription> ...
                                                                             </IfArticleDescription>
                                                                             <span class="article-continue"><a
-                                                                                href="<$ArticlePermalink$>#more"><span
-                                                                                    class="more_icon"></span>もっと読む</a>
+                                                                                    href="<$ArticlePermalink$>#more"><span
+                                                                                        class="more_icon"></span>もっと読む</a>
                                                                             </span>
                                                                     </div>
                                                                 </div>
@@ -180,7 +190,8 @@
                                                                                 <dl>
                                                                                     <dt>コメント</dt>
                                                                                     <dd>
-                                                                                        <a href="<$ArticlePermalink$>#comments">
+                                                                                        <a
+                                                                                            href="<$ArticlePermalink$>#comments">
                                                                                             <$ArticleCommentCount$> 件
                                                                                         </a>
                                                                                     </dd>
@@ -243,22 +254,32 @@
                 <!-- /#wrapper -->
     </div>
 
-    </body>
+</body>
+
 <script>
-    var go_to_home_page = function() {
-        document.getElementById("expandable").style.visibility = "visible";
-        document.getElementById("visiblete").style.display = "none";
+    var go_to_home_page = function () {
+        document.getElementById( "expandable" ).style.visibility = "visible";
+        document.getElementById( "visiblete" ).style.display = "none";
     }
 
-$(document).ready(function() {
-        document.getElementById("visiblete").style.visibility = "visible";
-        document.getElementById("expandable").style.visibility = "hidden";
-});
+    $( document ).ready( function () {
+        const keyName = 'visited';
+        const keyValue = true;
+        if ( !sessionStorage.getItem( keyName ) ) {
+            sessionStorage.setItem( keyName, keyValue );
+            document.getElementById( "visiblete" ).style.visibility = "visible";
+            document.getElementById( "expandable" ).style.visibility = "hidden";
+        } else {
+            document.getElementById( "expandable" ).style.visibility = "visible";
+            document.getElementById( "visiblete" ).style.display = "none";
+        }
 
-    window.onload = function() {
+    } );
 
-      var spanText = document.getElementById("total_c_292517");
-      innerHTMLtxt.innerHTML="†あなたは"+spanText.textContent+"人目の迷える子羊です†";
+    window.onload = function () {
+        var spanText = document.getElementById( "total_c_292517" );
+        innerHTMLtxt.innerHTML = "†あなたは" + spanText.textContent + "人目の迷える子羊です†";
     }
+
 </script>
 </html>
