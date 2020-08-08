@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(https://parts.blog.livedoor.jp/css/template_6thgen.css);
+
 
 /**
 @prefix : <http://purl.org/net/ns/doas#> .
@@ -1577,7 +1577,7 @@ div.kyaraback {
 .balloon2-left:before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: -22px;
     margin-top: -4px;
     border: 12px solid transparent;
@@ -1588,7 +1588,7 @@ div.kyaraback {
 .balloon2-left:after {
     content: "";
     position: absolute;
-    top: 50%;
+    top:30%;
     left: -28px;
     margin-top: -6px;
     border: 14px solid transparent;
@@ -1607,7 +1607,7 @@ div.kyaraback {
 .balloon2-right {
     position: relative;
     display: inline-block;
-    width: 80%;
+    width: 30%;
     margin: 1.5em 15px 1.5em 0;
     padding: 7px 10px;
     min-width: 120px;
@@ -1622,7 +1622,7 @@ div.kyaraback {
 .balloon2-right:before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: -22px;
     margin-top: -4px;
     border: 12px solid transparent;
