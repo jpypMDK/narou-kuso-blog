@@ -84,9 +84,6 @@
         </form>
     </div>
 
-
-
-
     <div class="expandable" id="expandable">
 
         <!-- トップページ-->
@@ -258,8 +255,7 @@
 
 <script>
     var go_to_home_page = function () {
-        document.getElementById( "expandable" ).style.visibility = "visible";
-        document.getElementById( "visiblete" ).style.display = "none";
+        location.reload();
     }
 
     $( document ).ready( function () {
@@ -267,13 +263,13 @@
         const keyValue = true;
         if ( !sessionStorage.getItem( keyName ) ) {
             sessionStorage.setItem( keyName, keyValue );
-            document.getElementById( "visiblete" ).style.visibility = "visible";
-            document.getElementById( "expandable" ).style.visibility = "hidden";
+            document.getElementById( "visiblete" ).style.display = "block";
+            document.getElementById( "expandable" ).style.display = "none";
         } else {
+            document.getElementById( "expandable" ).style.display = "block";
             document.getElementById( "expandable" ).style.visibility = "visible";
             document.getElementById( "visiblete" ).style.display = "none";
         }
-
     } );
 
     window.onload = function () {
