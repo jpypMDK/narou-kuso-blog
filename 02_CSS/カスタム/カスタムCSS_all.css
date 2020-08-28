@@ -17,7 +17,7 @@
 ----------------------------------------------- */
 
 body {
-    background-color: #cbddd9;
+    background-color: #fff;
 }
 
 #header2 {
@@ -457,7 +457,7 @@ div.comment-auth-announcement {
 }
 
 .article-body-inner {
-    line-height: 14px;
+    line-height: 1.4;
 }
 
 .article-body-inner a {
@@ -1548,8 +1548,11 @@ ul#ld-services {
 div.kyaraback {
     background-color: #C0C0C0;
     border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
+    margin-top: 5px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    padding: 5px;
 }
 
 /**
@@ -1573,6 +1576,8 @@ div.kyaraback {
     border: solid 3px #FFF;
     box-sizing: border-box;
 }
+
+
 
 .balloon2-left:before {
     content: "";
@@ -1598,6 +1603,7 @@ div.kyaraback {
 
 .balloon2-left p {
     margin: 0;
+    margin-bottom: 0px;
     padding-right: 50px;
     padding: 0;
 }
@@ -1608,7 +1614,7 @@ div.kyaraback {
     position: relative;
     display: inline-block;
     width: 30%;
-    margin: 1.5em 15px 1.5em 0;
+    margin: 1.5em 15px 1.5em 50%;
     padding: 7px 10px;
     min-width: 120px;
     max-width: 100%;
@@ -1633,7 +1639,7 @@ div.kyaraback {
 .balloon2-right:after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: -28px;
     margin-top: -6px;
     border: 14px solid transparent;
@@ -1644,6 +1650,7 @@ div.kyaraback {
 .balloon2-right p {
     margin: 0;
     padding: 0;
+    margin-bottom: 0px;
 }
 
 /**
@@ -1767,14 +1774,152 @@ div.section-box {
     max-height: 800px;
 }
 
-/*
-p.sample {
-    font: bold large/100% "ＭＳ ゴシック";
+h2.midashi {
+    margin: 0 0 1.5em;
+    padding: 0.8em;
+    background: #87cefa;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+h3.midashi {
+    margin: 0 0 1.5em;
+    padding: 0.3em;
+    border-left: 7px solid #87cefa;
+    border-bottom: 2px dashed #87cefa;
+}
+
+h4.midashi {
+    background: linear-gradient(transparent 70%, #87cefa 70%);
+}
+
+img.patye {
+    float: left;
+    width: 15% !important;
+    min-width: 70px;
+    height: auto;
+    margin: 1em 15px 1em 0;
+}
+
+img.chara {
+
+    width: 15% !important;
+    min-width: 70px;
+    height: auto;
+    margin: 1.5em 15px 1.5em 0;
 }
 
 p.sample2 {
     background-color: #f6f6f6;
     margin: 20px;
-    padding: 50px;
+    padding: 20px;
 }
-*/
+
+div.article-body-outer div.article-body img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto 0;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc {
+        display: none !important;
+    }
+
+    .balloon2-left {
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 0 1.5em 10px;
+        width: 100%;
+        padding: 5px 6px;
+        min-width: 120px;
+        max-width: 70%;
+        color: #FFF;
+        font-size: 10px;
+        background: #000;
+        border: solid 2px #FFF;
+        box-sizing: border-box;
+        line-height: 1.2;
+    }
+
+    .balloon2-right {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin: 1.5em 5px 1.5em 1px;
+        padding: 5px 6px;
+        min-width: 120px;
+        max-width: 70%;
+        color: #FFF;
+        font-size: 10px;
+        background: #000;
+        border: solid 2px #FFF;
+        box-sizing: border-box;
+        line-height: 1.2;
+    }
+
+    .balloon2-left:before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: -20px;
+        margin-top: -4px;
+        border: 10px solid transparent;
+        border-right: 10px solid #000;
+        z-index: 2;
+    }
+
+    .balloon2-left:after {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: -26px;
+        margin-top: -6px;
+        border: 12px solid transparent;
+        border-right: 12px solid #FFF;
+        z-index: 1;
+    }
+
+    .balloon2-right:before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        right: -20px;
+        margin-top: -4px;
+        border: 10px solid transparent;
+        border-left: 10px solid #000;
+        z-index: 2;
+    }
+
+    .balloon2-right:after {
+        content: "";
+        position: absolute;
+        top: 30%;
+        right: -26px;
+        margin-top: -6px;
+        border: 12px solid transparent;
+        border-left: 12px solid #FFF;
+        z-index: 1;
+    }
+
+    body {
+        background-color: #cbddd9;
+    }
+
+    .sp {
+        display: block !important;
+    }
+}
