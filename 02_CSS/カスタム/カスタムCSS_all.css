@@ -446,7 +446,7 @@ div.comment-auth-announcement {
 ----------------------------------------------- */
 
 .article-body {
-    color: #080000;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -1473,6 +1473,13 @@ ul#ld-services {
 
 /* オリジナル
 ----------------------------------------------- */
+/* スマホ対応の色々*/
+div.article-body-outer div.article-body img {
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+    margin: auto 0;
+}
 
 /**
  *  偽トップ画面とかの管理
@@ -1603,7 +1610,7 @@ div.kyaraback {
 
 .balloon2-left p {
     margin: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
     padding-right: 50px;
     padding: 0;
 }
@@ -1650,7 +1657,7 @@ div.kyaraback {
 .balloon2-right p {
     margin: 0;
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 
 /**
@@ -1807,7 +1814,6 @@ img.patye {
 }
 
 img.chara {
-
     width: 15% !important;
     min-width: 70px;
     height: auto;
@@ -1816,8 +1822,8 @@ img.chara {
 
 p.sample2 {
     background-color: #f6f6f6;
-    margin: 20px;
-    padding: 20px;
+    margin: 1em;
+    padding: 0.5em;
 }
 
 /*Twitter風*/
@@ -1916,7 +1922,7 @@ blockquote.twitter-tweet {
     bottom: auto !important;
     clear: none !important;
     clip: auto !important;
-    color: #333 !important;
+    color: rgb(19, 19, 19) !important;
     cursor: auto !important;
     direction: ltr !important;
     filter:  !important;
@@ -1974,13 +1980,7 @@ blockquote.twitter-tweet {
 }
 
 
-/* スマホ対応の色々*/
-div.article-body-outer div.article-body img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    margin: auto 0;
-}
+
 
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc {
